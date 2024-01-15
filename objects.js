@@ -51,7 +51,7 @@ console.log(calculator.addition(5,6))
 console.log(calculator.subtraction(5,6))
 console.log(calculator.multiplication(5,6))
 console.log(calculator.division(5,6))
-console.log(calculator.remainder(3,2)) */
+console.log(calculator.remainder(3,2)) 
 
 let fruits = {
    apple: "red",
@@ -64,4 +64,17 @@ let keys = Object.keys(fruits)
 for (let i = 0; i < keys.length; i++) {
    let names = keys[i]
    console.log(names, fruits[names])
+} */
+
+let car = {
+    make : 'Porsche',
+    model : 'GT3 RS',
+    produced : 2003,
+    yearCalculate : function () {
+        let currentDate = new Date();
+        let currentYear = currentDate.getFullYear();
+        return currentYear - car.produced;
+},
 }
+
+console.log(car, car.yearCalculate())
